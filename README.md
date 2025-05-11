@@ -5,7 +5,6 @@ This is the repository for paper: Competitiveness analysis to identify marginal 
 # Functionality
 1. Get the data of specific productions from dataset.
 2. Calculate RCA
-3. Calculate RSCA
 
 # Quick Start
 1. Set up for constants is in `constants.py`.
