@@ -10,7 +10,7 @@ import pandas as pd
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from src.rca_calc import *
+from rca_batch_calc.rca_calc import *
 
 
 def execution_time(func):
