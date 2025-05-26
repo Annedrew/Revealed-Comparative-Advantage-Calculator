@@ -138,15 +138,15 @@ class RCA_Calculator:
             exporter_code = df['i'].unique() # all exporters
             selected_df = df
             
-            for exporter in exporter_code:
+            for i, exporter in enumerate(exporter_code):
                 for importer in importer_code:
                     row = [year, exporter, importer]
                     for val in vals:
                         country_single_imp = self.all_imp(selected_df, val, importer, exporter)
                         row.append(country_single_imp)
                     country_all_rows.append(row)
-
-                print(f"Handling {exporter} exporter.")
+                if i % 10 == 0:
+                    print(f"Handling exporter {exporter}.")
         else:
             if df["i"].isin(country_code).any() or df["j"].isin(country_code).any():
                 selected_df = df[(df['i'].isin(country_code)) & (df['j'].isin(country_code))]
@@ -181,7 +181,7 @@ class RCA_Calculator:
             exporter_code = df['i'].unique() # all exporters
             selected_df = df
             
-            for exporter in exporter_code:
+            for i, exporter in enumerate(exporter_code):
                 for importer in importer_code:
                     row = [year, exporter, importer]
                     for val in vals:
@@ -189,7 +189,8 @@ class RCA_Calculator:
                         row.append(country_single_imp)
                     country_all_rows.append(row)
                     
-                print(f"Handling {exporter} exporter.")
+                if i % 10 == 0:
+                    print(f"Handling exporter {exporter}.")
         else:
             if df["i"].isin(country_code).any() or df["j"].isin(country_code).any():
                 selected_df = df[(df['i'].isin(country_code)) & (df['j'].isin(country_code))]
@@ -330,3 +331,5 @@ class RCA_Calculator:
                 pair_country_list.append((imp, exp))
 
         return pair_country_list
+    
+    
