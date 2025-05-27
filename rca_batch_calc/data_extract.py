@@ -52,17 +52,28 @@ class DataExtract:
         else:
             print("No data available to save to a CSV file.")
 
-    def transform_countries(self, output_file, country_file):
+    def convert_countries(self, original_file_path, comparison_file_path):
         """
-        Transform code to countries
+        Convert code to countries
         """
-        df_output = pd.read_csv(output_file)
-        df_country = pd.read_csv(country_file)
+        df_output = pd.read_csv(original_file_path)
+        df_country = pd.read_csv(comparison_file_path)
 
         mapping_dict = pd.Series(df_country.country_name.values, index=df_country.country_code).to_dict()
         
-        df_output['i'] = df_output['i'].map(mapping_dict)
-        df_output['j'] = df_output['j'].map(mapping_dict)
+        column_pairs = [
+            ('i', 'j'),
+            ('importer', 'exporter'),
+            ('Importer', 'Exporter')
+        ]
 
-        output_file_path = f'{os.path.split(output_file)[0]}/output_countries.csv'
-        df_output.to_csv(output_file_path, index=False)
+        for col_i, col_j in column_pairs:
+            if col_i in df_output.columns and col_j in df_output.columns:
+                df_output[col_i] = df_output[col_i].map(mapping_dict)
+                df_output[col_j] = df_output[col_j].map(mapping_dict)
+                
+                output_file_path = f'{os.path.split(original_file_path)[0]}/output_countries.csv'
+                df_output.to_csv(output_file_path, index=False)
+                break
+        else:
+            print("Error: No valid column pairs ('i'/'j' or 'importer'/'exporter') found.")
