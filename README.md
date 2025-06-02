@@ -1,6 +1,8 @@
 # Revealed Comparative Advantage Calculator
 
-This is the repository for paper _Competitiveness analysis to identify marginal suppliers in consequential LCA: A seaweed case_. And it's designed as a Python library to help users calculate Revealed Comparative Advantage (RCA) using BACI trade data.
+This is the repository associated with the manuscript _Competitiveness analysis to identify marginal suppliers in consequential LCA: A seaweed case_. 
+
+The repository is designed as a Python library to help users calculate Revealed Comparative Advantage (RCA) using BACI trade data.
 
 ## 📖 Background Knowledge 
 
