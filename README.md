@@ -1,5 +1,7 @@
 # Revealed Comparative Advantage Calculator
 
+[![PyPI - Version](https://img.shields.io/pypi/v/rca-batch-calc?color=green)](https://pypi.org/project/rca-batch-calc/)
+
 This is the repository associated with the manuscript _Competitiveness analysis to identify marginal suppliers in consequential LCA: A seaweed case_. 
 
 The repository is designed as a Python library to help users calculate Revealed Comparative Advantage (RCA) using BACI trade data.
