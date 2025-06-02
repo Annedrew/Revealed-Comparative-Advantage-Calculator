@@ -72,7 +72,7 @@ class DataExtract:
                 df_output[col_i] = df_output[col_i].map(mapping_dict)
                 df_output[col_j] = df_output[col_j].map(mapping_dict)
                 
-                output_file_path = f'{os.path.split(original_file_path)[0]}/output_countries.csv'
+                output_file_path = f'{original_file_path.split(".csv")[0]}_(country_name).csv'
                 df_output.to_csv(output_file_path, index=False)
                 break
         else:

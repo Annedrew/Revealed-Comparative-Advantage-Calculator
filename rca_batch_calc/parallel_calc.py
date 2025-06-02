@@ -66,10 +66,10 @@ class Parallel_Calculator:
         if is_dataframe == True:
             final_df = pd.concat(all_rows, ignore_index=True)
             final_df = final_df.rename(columns={'t': 'Year', 'i': 'Exporter', 'j': 'Importer', 'k': 'Product', 'v': 'V', 'q': 'Q'})
-            final_df.to_csv("xij.csv", index=False)
+            final_df.to_csv(f"{folder_path}/xij.csv", index=False)
         else:
             output_all_rows = pd.DataFrame(all_rows, columns=column_names)
-            output_all_rows.to_csv(f"{process_name}.csv", index=False)
+            output_all_rows.to_csv(f"{folder_path}/{process_name}.csv", index=False)
 
     def run_xij(self, folder_path, file, prod):
         print(f"Processing {file} in thread: {threading.get_ident()}")
