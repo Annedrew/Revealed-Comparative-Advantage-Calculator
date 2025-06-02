@@ -7,7 +7,7 @@ The repository is designed as a Python library to help users calculate Revealed 
 ## 📖 Background Knowledge 
 
 ### BACI Dataset
-The [BACI](https://www.cepii.fr/CEPII/en/bdd_modele/bdd_modele_item.asp?id=37) dataset offers detailed information on bilateral trade flows for 200 countries, broken down by product (covering 5,000 products). The data spans various time periods, ranging from 2 to 28 years, depending on the specific dataset. Each year's data is stored in a separate `CSV` file. Each file contains six columns: _y = year_, _i = importer_, _e = exporter_, _p = product_, _v = value_, and _q = quantity_, and comprises over one million rows of data. 
+The [BACI](https://www.cepii.fr/CEPII/en/bdd_modele/bdd_modele_item.asp?id=37) dataset offers detailed information on bilateral trade flows for 200 countries, broken down by product (covering 5,000 products). The data spans various time periods, ranging from 2 to 28 years, depending on the specific dataset. Each year's data is stored in a separate `CSV` file. Each file contains six columns: _t = year_, _i = importer_, _j = exporter_, _k = product_, _v = value_, and _q = quantity_, and comprises over one million rows of data. 
 
 This library can calculate RCA for both _quantity_ (metric tons) and _value_ (thousand USD).
 
