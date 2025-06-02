@@ -1,6 +1,7 @@
 # Revealed Comparative Advantage Calculator
 
 [![PyPI - Version](https://img.shields.io/pypi/v/rca-batch-calc?color=green)](https://pypi.org/project/rca-batch-calc/)
+[![DOI](https://zenodo.org/badge/978591723.svg)](https://doi.org/10.5281/zenodo.15578976)
 
 This is the repository associated with the manuscript _Competitiveness analysis to identify marginal suppliers in consequential LCA: A seaweed case_. 
 
