@@ -30,6 +30,7 @@ Reference:
 [Competitiveness of Indonesian Non-Human Consumption Seaweed in the China Market.pdf](https://github.com/user-attachments/files/17606696/Competitiveness.of.Indonesian.Non-Human.Consumption.Seaweed.in.the.China.Market.pdf)  
 
 ## ✨ Features
+(applicable to all BACI dataset versions)
 1. Get the data for specific products from the BACI dataset.
 2. Calculate RCA in batches.
 3. Convert country codes into country names.
