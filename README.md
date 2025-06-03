@@ -68,4 +68,5 @@ pip install pandas
 ## 💬 Contact
 If you encounter any issues or would like to contribute to the library, please contact: 
   - Ning An (ningan@plan.aau.dk)
+  - Ravalnath Shikhare (ravshi@plan.aau.dk)
   - Massimo Pizzol (massimo@plan.aau.dk)
