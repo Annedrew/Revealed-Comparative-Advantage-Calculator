@@ -1,6 +1,9 @@
 # Revealed Comparative Advantage Calculator
 
+[![Python](https://img.shields.io/badge/Python-3776AB.svg?logo=Python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?logo=Jupyter&logoColor=white)](https://jupyter.org/)
 [![PyPI - Version](https://img.shields.io/pypi/v/rca-batch-calc?color=green)](https://pypi.org/project/rca-batch-calc/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Annedrew/Revealed-Comparative-Advantage-Calculator/blob/main/LICENSE)
 [![DOI](https://zenodo.org/badge/978591723.svg)](https://doi.org/10.5281/zenodo.15578976)
 
 This is the repository associated with the manuscript _Competitiveness analysis to identify marginal suppliers in consequential LCA: A seaweed case_. 
