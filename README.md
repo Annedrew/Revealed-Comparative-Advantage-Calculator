@@ -71,3 +71,12 @@ If you encounter any issues or would like to contribute to the library, please c
   - Ning An (ningan@plan.aau.dk)
   - Ravalnath Shikhare (ravshi@plan.aau.dk)
   - Massimo Pizzol (massimo@plan.aau.dk)
+
+## Funding
+Ravalnath Shikhare’s contribution is funded by the FunSea Project (Horizon Europe BlueBio Partnership, grant number 3157-00016B). Ning An’s contribution is funded by the ALIGNED project (Horizon Europe, grant number 101059430). Massimo Pizzol’s contribution is funded by both FunSea and ALIGNED.
+
+## Acknowledgements
+The work was partially supported by DeiC National HPC (g.a. DeiC-AAU-L1-402401).
+
+## Conflict of Interest statement
+The authors declare no conflict of interest.
